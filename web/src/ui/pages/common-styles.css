@@ -1,0 +1,14 @@
+
+.page {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  background-color: white;
+  border-radius: 10px;
+}

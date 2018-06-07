@@ -4,13 +4,12 @@ services:
   helio-challenge-db:
     container_name: helio-challenge-db
     restart: always
-     environment:
+    environment:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: admin
       PGPASSWORD: admin
     build: 
       context: ./services/db
-      dockerfile: Dockerfile-dev
     ports:
       - '5432:5432'
     networks: 
