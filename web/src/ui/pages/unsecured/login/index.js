@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import CSSModules from 'react-css-modules'
 
 import css from './index.css'
-// import PageTemplate from '../'
+import PageTemplate from '../'
 import { loginProcess } from 'Process/users/auth'
 
 class Login extends Component {
@@ -49,7 +49,15 @@ class Login extends Component {
     //      //that handles a click calling this.handleClick
     //      //make sure to set its type to a button
     return (
-      <span>TODO delete me</span>
+      <PageTemplate>
+        <div styleName="title">Spenny-O's House o' Horrors</div>
+        <div styleName="description">A dope collection of dank code</div>
+        <form styleName="form">
+          <input type="text" placeholder="Your email" value={this.state.email} onChange={this.handleInputEmail} />
+          <input type="password" placeholder="Enter Password" value={this.state.password} onChange={this.handleInputPassword} />
+          <input type="submit" onClick={this.handleClick} />
+        </form>
+      </PageTemplate>
     )
   }
 }
