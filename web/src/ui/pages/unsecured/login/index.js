@@ -34,27 +34,27 @@ class Login extends Component {
   render() {
     return (
       <PageTemplate>
-        <div styleName="title">
           <h1>Welcome to Login</h1>
+        <div styleName="title">
         </div>
         <div styleName="description">
-          Sign in with your information below
         </div>
-        <form styleName="form">
+          Sign in with your information below
           <div styleName="loginIcon"><UserPic /></div>
-          <input type="text" value={this.state.email} placeholder="Your email"
+        <form styleName="form">
             onChange={this.handleInputEmail} />
-          <div styleName="loginIcon"><PassPic /></div>
-          <input type="password" value={this.state.password} placeholder="Enter Password"
-            onChange={this.handleInputPassword} />
-          <button type="button" onClick={this.handleClick}>
-            Login
-          </button>
-          <div styleName="forgotLink">
-            Forgot Password?
-          </div>
+          <input type="text" value={this.state.email} placeholder="Your email"
         </form>
       </PageTemplate>
+            Forgot Password?
+          </div>
+          <div styleName="forgotLink">
+          </button>
+            Login
+          <button type="button" onClick={this.handleClick}>
+          <input type="password" value={this.state.password} placeholder="Enter Password"
+            onChange={this.handleInputPassword} />
+          <div styleName="loginIcon"><PassPic /></div>
     )
   }
 }

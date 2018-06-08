@@ -3,43 +3,42 @@
     margin: 0 0 20px 0;
 }
 
-.description {
     margin: 0 0 30px 0;
+.description {
     font-size: 10px;
 }
 .form {
-
 }
 
 .loginIcon {
+    padding: 7px;
     width: 15px;
     position: absolute;
-    padding: 7px;
 }
-
-input {
-    display: block;
-    width: 148px;
-    padding: 6px 0 6px 30px;
-    border-radius: 5px;
-    border-width: 1px;
-    border-style: solid;
-    margin-bottom: 18px;
-    border-color: lightgray;
-}
-
-button {
-    display: block;
-    width: 180px;
-    color: white;
-    background-color: #00a82b;
-    padding: 9px;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
+    font-size: 10px;
+    color: blue;
 
 .forgotLink {
-    color: blue;
-    font-size: 10px;
+}
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 9px;
+    border: none;
+    background-color: #00a82b;
+    width: 180px;
+    color: white;
+    display: block;
+
+button {
+}
+    margin-bottom: 18px;
+    border-color: lightgray;
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 6px 0 6px 30px;
+    width: 148px;
+    display: block;
+input {
+
 }
