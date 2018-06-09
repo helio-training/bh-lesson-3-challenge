@@ -5,6 +5,7 @@ import CSSModules from 'react-css-modules'
 import css from './index.css'
 import PageTemplate from '../'
 import { loginProcess } from 'Process/users/auth'
+import { Logo } from '/logo.svg'
 
 class Login extends Component {
   constructor(props) {
@@ -53,9 +54,14 @@ class Login extends Component {
         <div styleName="title">Spenny-O's House o' Horrors</div>
         <div styleName="description">A dope collection of dank code</div>
         <form styleName="form">
-          <input type="text" placeholder="Your email" value={this.state.email} onChange={this.handleInputEmail} />
+          <div styleName="email-input-field">
+            <input type="text" placeholder="Your email" value={this.state.email} onChange={this.handleInputEmail} />
+            <input role="img" img={Logo} />
+          </div>
+          <br />
           <input type="password" placeholder="Enter Password" value={this.state.password} onChange={this.handleInputPassword} />
-          <input type="submit" onClick={this.handleClick} />
+          <br />
+          <input type="button" onClick={this.handleClick} />
         </form>
       </PageTemplate>
     )

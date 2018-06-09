@@ -1,10 +1,44 @@
 /* Make the styles to create the same look as shown in class */
-.title {
+* {}
 
+#PageTemplate {
+    border: 2px solid orange;
+    background-color: #ffff00
+}
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #000000;
+    background: none;
 }
 .description {
-
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #000000;
+    background: none;
 }
 .form {
-    
+    display: block;
+}
+.form input[type=text] {
+    border-radius: 2px;
+    border-color: #ff0000;
+    border-width: 1px;
+    line-height: 20px;
+    margin: 20px auto 20px auto;
+}
+.form input[type=password] {
+    border-radius: 2px;
+    border-color: #ff0000;
+    border-width: 1px;
+    line-height: 20px;
+    margin: auto auto 20px auto;
+}
+.form input[type=button] {
+    background-color: #00ff00;
+    border-radius: 1px;
+    width: 60px;
+    color: #000000;
+    line-height: 20px;
+    margin: auto auto 20px auto;
 }
