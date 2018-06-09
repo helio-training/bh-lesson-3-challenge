@@ -36,14 +36,26 @@ class Login extends Component {
       <PageTemplate>
           <h1>Welcome to Login</h1>
         <div styleName="title">
+          <h1>Welcome to Login</h1>
         </div>
         <div styleName="description">
+          Sign in with your information below
         </div>
           Sign in with your information below
           <div styleName="loginIcon"><UserPic /></div>
         <form styleName="form">
-            onChange={this.handleInputEmail} />
+          <div styleName="loginIcon"><UserPic /></div>
           <input type="text" value={this.state.email} placeholder="Your email"
+            onChange={this.handleInputEmail} />
+          </div>
+            Forgot Password?
+          <div styleName="forgotLink">
+          </button>
+            Login
+          <button type="button" onClick={this.handleClick}>
+          <div styleName="loginIcon"><PassPic /></div>
+            onChange={this.handleInputPassword} />
+          <input type="password" value={this.state.password} placeholder="Enter Password"
         </form>
       </PageTemplate>
             Forgot Password?
