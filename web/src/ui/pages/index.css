@@ -16,7 +16,10 @@
   align-items: stretch;
   justify-content: center;
   background-color: rgb(233, 232, 232);
-  padding: 20px 50px;
+    padding: 20px 50px;
+    padding-top: 100px;
+    padding-bottom: 275px;
+  
 }
 
 .footer-container {

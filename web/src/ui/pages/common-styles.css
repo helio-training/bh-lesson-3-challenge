@@ -12,3 +12,21 @@
   background-color: white;
   border-radius: 10px;
 }
+.App{
+  text-align: center;
+  background-color: green;
+}
+
+
+.title{
+padding: 20px;
+background-color: blue;
+
+}
+.description{
+
+}
+.form{
+  display: block;
+  
+}
