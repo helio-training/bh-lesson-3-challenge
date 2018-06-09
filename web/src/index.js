@@ -4,7 +4,7 @@ import { Provider } from 'react-redux'
 import { BrowserRouter } from 'react-router-dom'
 
 import './index.css'
-import App from 'UI/pages'
+import App from 'UI/pages/'
 import store from 'State/store'
 import registerServiceWorker from './registerServiceWorker'
 
