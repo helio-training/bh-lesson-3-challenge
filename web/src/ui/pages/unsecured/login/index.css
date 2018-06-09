@@ -1,1 +1,40 @@
 /* Make the styles to create the same look as shown in class */
+title {
+    
+}
+description {
+
+}
+form {
+
+
+}
+h1 {
+    font-size: 30px;
+
+}
+h2 {
+    font-size: 20px;
+}
+button{
+    color: #ffffff;
+    background-color: rgb(25, 185, 25);
+    width: 224px;
+    padding:10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 25px;
+}
+input{
+    margin: 5px;
+    width: 200px;
+    padding: 10px 0 10px 40px;
+    
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.loginIcon{
+    height: 5px;
+}

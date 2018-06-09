@@ -3,8 +3,10 @@ import React, { Component } from 'react'
 import CSSModules from 'react-css-modules'
 
 import css from './index.css'
-// import PageTemplate from '../'
+import PageTemplate from '../'
 import { loginProcess } from 'Process/users/auth'
+import Lock from './lock.svg'
+import User from './user.svg'
 
 class Login extends Component {
   constructor(props) {
@@ -49,7 +51,21 @@ class Login extends Component {
     //      //that handles a click calling this.handleClick
     //      //make sure to set its type to a button
     return (
-      <span>TODO delete me</span>
+      <PageTemplate>
+        <div stylename="title"><h1>Welcome to Hell</h1></div>
+        <div stylename="description"><h2>Sign in with your soul below</h2></div>
+        <form stylename="form">
+          <div styletype="loginIcon"><User /></div>
+          <input type="text" placeholder="Your Email" value={this.state.email} onChange={this.handleInputEmail} />
+          <br />
+          <div><Lock /></div>
+          <input type="password" placeholder="Enter Password" value={this.state.password} onChange={this.handleInputPassword} />
+          <br />
+          <button type="button" onClick={this.handleClick}>
+            Login
+          </button>
+        </form>
+      </PageTemplate>
     )
   }
 }
