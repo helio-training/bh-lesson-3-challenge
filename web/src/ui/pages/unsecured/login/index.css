@@ -1,52 +1,49 @@
 /* Make the styles to create the same look as shown in class */
 
-.PageTemplate{
+.frame {
+  margin: auto;
+  width: 300px;
+
+}
+
+PageTemplate{
     border-radius: 6px;
     size: 600px;
+    width: 250px;
   }
   .title {
-  font-size: 30px;
+    margin-top: -15px;
+    font-size: 28px;
     font-weight: bold;
-    font-style: italic;
   }
   .description {
-  font-size: 14px;
+    margin: 25px 0;
+    font-size: 10px;
   }
   input[type=email], input[type=password] {
-    width: 100%;
+    width: 95%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    border-radius: 6px;
+    font-size: 18px;
+    opacity: .4;
   }
   button {
-    background-color: #4CAF50;
+    background-color: #22BA3E;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 95%;
     border-radius: 6px;
   }
-  .mail1 {
-    width: 25px;
-    position: absolute;
-    padding: 15px;
+
+  a {
+    text-decoration: none;
+    font-size: 12px;
   }
-  .mail2 {
-    width: 25px;
-    position: absolute;
-  }
-  .lock1 {
-    width: 18px;
-    position: absolute;
-    padding: 18px;
-  }
-  .lock2 {
-    width: 18px;
-    position: absolute;
-    padding: 18px;
-  }
-  
+

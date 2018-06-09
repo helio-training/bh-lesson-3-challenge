@@ -10,7 +10,7 @@ you will be graded on checkpoints as we progress. Make sure to follow all of the
 1. Setup the landing page and complete the pyramid challenge
     - Look under the secured folder
         - Finish the index.js files under the landing folder and the pyramid-challenge folder
-        - Add css as needed to get them to look right. 
+        - Add css as needed to get them to look right.
 ### Clone down the project (don't fork)
 1. Clone this repo down
 1. Create a branch with the following syntax ```<lastname>/<firstname>-react-challenge```
