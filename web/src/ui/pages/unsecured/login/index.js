@@ -49,7 +49,7 @@ class Login extends Component {
     //      //that handles a click calling this.handleClick
     //      //make sure to set its type to a button
     return (
-      <span>TODO delete me</span>
+      <span>This will be the login page</span>
     )
   }
 }
