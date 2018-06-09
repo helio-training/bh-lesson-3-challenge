@@ -1,1 +1,52 @@
 /* Make the styles to create the same look as shown in class */
+
+.PageTemplate{
+    border-radius: 6px;
+    size: 600px;
+  }
+  .title {
+  font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .description {
+  font-size: 14px;
+  }
+  input[type=email], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 6px;
+  }
+  .mail1 {
+    width: 25px;
+    position: absolute;
+    padding: 15px;
+  }
+  .mail2 {
+    width: 25px;
+    position: absolute;
+  }
+  .lock1 {
+    width: 18px;
+    position: absolute;
+    padding: 18px;
+  }
+  .lock2 {
+    width: 18px;
+    position: absolute;
+    padding: 18px;
+  }
+  

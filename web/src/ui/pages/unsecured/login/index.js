@@ -5,6 +5,8 @@ import CSSModules from 'react-css-modules'
 import css from './index.css'
 import PageTemplate from '../'
 import { loginProcess } from 'Process/users/auth'
+import Lock from './Lock.svg'
+import Mail from './Mail.svg'
 
 class Login extends Component {
   constructor(props) {
@@ -43,13 +45,26 @@ class Login extends Component {
     //    //Create an input with:
     //      //a placeholer attribute of "Enter Password"
     //      //a type attribute of password
-    //      //a value attribute of this.state.password (note this is javascript)
+    //      //a value attribute of this.state.password (note thi  s is javascript)
     //      //a onChange attribute of this.handleInputPassword (note this is javascript)
     //    //Create a react button:
     //      //that handles a click calling this.handleClick
     //      //make sure to set its type to a button
     return (
-      <span>TODO delete me</span>
+      <PageTemplate>
+        <div styleName="title">Welcome to Rome</div>
+        <div styleName="description">Sign in with your information below</div>
+        <form>
+          <div styleName="lock1"><Lock /></div>
+          <div styleName="mail1"><Lock /></div>
+          <input placeholder="Your Email" type="email" value={this.state.email} onChange={this.handleInputEmail} />
+          <div styleName="mail2"><Mail /></div>
+          <div styleName="lock2"><Lock /></div>
+          <input placeholder="Enter Password" type="password" value={this.state.password} onChange={this.handleInputPassword} />
+          <button type="button" onClick={this.handleClick}>Login</button>
+          <a href="#">Forgot Password?</a>
+        </form>
+      </PageTemplate>
     )
   }
 }
