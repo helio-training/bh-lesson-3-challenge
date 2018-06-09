@@ -9,7 +9,7 @@ class LandingPage extends Component {
   render() {
     // Create a div with a class of container
     return (
-      <span>TODO delete me</span>
+      <span>You are logged in</span>
     )
   }
 }
