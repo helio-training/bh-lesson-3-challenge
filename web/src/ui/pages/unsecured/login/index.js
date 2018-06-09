@@ -29,29 +29,37 @@ class Login extends Component {
   }
 
   render() {
-    // Create a PageTemplate element
-    //  //create a div with a class of title
-    //    //Add the title you want
-    //  //create a div with a class of description
-    //    //Add your description
-    //  //Create a form with a class of form
-    //    //Create an input with:
-    //      //a placeholer attribute of "Your email"
-    //      //a type attribute of text
-    //      //a value attribute of this.state.email (note this is javascript)
-    //      //a onChange attribute of this.handleInputEmail (note this is javascript)
-    //    //Create an input with:
-    //      //a placeholer attribute of "Enter Password"
-    //      //a type attribute of password
-    //      //a value attribute of this.state.password (note this is javascript)
-    //      //a onChange attribute of this.handleInputPassword (note this is javascript)
-    //    //Create a react button:
-    //      //that handles a click calling this.handleClick
-    //      //make sure to set its type to a button
     return (
-      <span>TODO delete me</span>
+      <PageTemplate>
+        <div styleName="title">Home</div>
+        <div styleName="description">Login</div>
+        <form id="around-form">
+          <input placeholder="Your Email" type="email" value={this.state.email} onChange={this.handleInputEmail} />
+          <input placeholder="Enter Password" type="password" value={this.state.password} onChange={this.handleInputPassword} />
+          <button type="button" value={this.state.handleClick} onClick={this.handleClick}>Login</button>
+        </form>
+      </PageTemplate>
     )
   }
 }
-
 export default loginProcess(CSSModules(Login, css))
+
+// Create a PageTemplate element
+//  //create a div with a class of title
+//    //Add the title you want
+//  //create a div with a class of description
+//    //Add your description
+//  //Create a form with a class of form
+//    //Create an input with:
+//      //a placeholer attribute of "Your email"
+//      //a type attribute of text
+//      //a value attribute of this.state.email (note this is javascript)
+//      //a onChange attribute of this.handleInputEmail (note this is javascript)
+//  Create an input with:
+//      //a placeholer attribute of "Enter Password"
+//      //a type attribute of password
+//      //a value attribute of this.state.password (note this is javascript)
+//      //a onChange attribute of this.handleInputPassword (note this is javascript)
+//    //Create a react button:
+//      //that handles a click calling this.handleClick
+//      //make sure to set its type to a button

@@ -1,0 +1,44 @@
+/* Make the styles to create the same look as shown in class */
+.title {
+    font-size: inherit;
+    margin: 100px 100px;
+}
+.description {
+    position: center;
+
+}
+
+
+ #allcolor {
+    display: flex;
+    align-content:center;
+    justify-content:center;
+    padding: 150px 50px;
+    background-origin: padding-box;
+    background-color: white;
+    background: #fff;
+    backface-visibility: black;
+    padding-bottom: 50px 50px; 
+ }
+
+ :global {
+    form {
+        display: block;
+        background-color: #fff;
+    }
+
+    #around-form input {
+        border-color: #DDD;
+        padding: 7px 1px;
+        padding-top: 1px;
+        padding-right: 7px;
+        padding-bottom: 1px;
+        padding-left: 7px;
+        border-style: inherit;
+        border-width: 5px;
+        border-top-width: 2px;
+        border-right-width: 5px;
+        border-bottom-width: 2px;
+        display: block;   
+    }
+ }
