@@ -15,7 +15,7 @@ class LandingPage extends Component {
     //      //Link with a "to" attribute that points to "/pyramid-challenge"
 
     return (
-      <span>TODO delete me</span>
+      <span>You are logged in</span>
     )
   }
 }

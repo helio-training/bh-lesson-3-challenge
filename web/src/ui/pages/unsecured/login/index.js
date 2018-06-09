@@ -6,6 +6,9 @@ import css from './index.css'
 import PageTemplate from '../'
 import { loginProcess } from 'Process/users/auth'
 
+import UserPic from './user.svg'
+import PassPic from './pass.svg'
+
 class Login extends Component {
   constructor(props) {
     super(props)
@@ -29,41 +32,27 @@ class Login extends Component {
   }
 
   render() {
-    // Create a PageTemplate element
-    //  //create a div with a class of title
-    //    //Add the title you want
-    //  //create a div with a class of description
-    //    //Add your description
-    //  //Create a form with a class of form
-    //    //Create an input with:
-    //      //a placeholer attribute of "Your email"
-    //      //a type attribute of text
-    //      //a value attribute of this.state.email (note this is javascript)
-    //      //a onChange attribute of this.handleInputEmail (note this is javascript)
-    //    //Create an input with:
-    //      //a placeholer attribute of "Enter Password"
-    //      //a type attribute of password
-    //      //a value attribute of this.state.password (note this is javascript)
-    //      //a onChange attribute of this.handleInputPassword (note this is javascript)
-    //    //Create a react button:
-    //      //that handles a click calling this.handleClick
-    //      //make sure to set its type to a button
     return (
       <PageTemplate>
         <div styleName="title">
-          <h1>Login Form</h1>
+          <h1>Welcome to Login</h1>
         </div>
         <div styleName="description">
-          Enter your info ya dummy!
+          Sign in with your information below
         </div>
         <form styleName="form">
+          <div styleName="loginIcon"><UserPic /></div>
           <input type="text" value={this.state.email} placeholder="Your email"
             onChange={this.handleInputEmail} />
+          <div styleName="loginIcon"><PassPic /></div>
           <input type="password" value={this.state.password} placeholder="Enter Password"
             onChange={this.handleInputPassword} />
           <button type="button" onClick={this.handleClick}>
-            Enter
+            Login
           </button>
+          <div styleName="forgotLink">
+            Forgot Password?
+          </div>
         </form>
       </PageTemplate>
     )

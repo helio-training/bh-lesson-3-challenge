@@ -1,17 +1,45 @@
-.title {
-
+.title h1 {
+    font-size: 20px;
+    margin: 0 0 20px 0;
 }
-.description {
 
+.description {
+    margin: 0 0 30px 0;
+    font-size: 10px;
 }
 .form {
 
 }
 
+.loginIcon {
+    width: 15px;
+    position: absolute;
+    padding: 7px;
+}
+
 input {
     display: block;
+    width: 148px;
+    padding: 6px 0 6px 30px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    margin-bottom: 18px;
+    border-color: lightgray;
 }
 
 button {
     display: block;
+    width: 180px;
+    color: white;
+    background-color: #00a82b;
+    padding: 9px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.forgotLink {
+    color: blue;
+    font-size: 10px;
 }
