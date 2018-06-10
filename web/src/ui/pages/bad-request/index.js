@@ -10,7 +10,9 @@ class BadRequest extends Component {
   // TODO make a div with a class of not-found
   render() {
     return (
-      <span>TODO delete me</span>
+      <div className="not-found">
+        Not Found
+      </div>
     )
   }
 }

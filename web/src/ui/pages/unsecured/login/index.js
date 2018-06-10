@@ -35,6 +35,7 @@ class Login extends Component {
     //  //create a div with a class of description
     //    //Add your description
     //  //Create a form with a class of form
+
     //    //Create an input with:
     //      //a placeholer attribute of "Your email"
     //      //a type attribute of text
@@ -45,11 +46,22 @@ class Login extends Component {
     //      //a type attribute of password
     //      //a value attribute of this.state.password (note this is javascript)
     //      //a onChange attribute of this.handleInputPassword (note this is javascript)
+
     //    //Create a react button:
     //      //that handles a click calling this.handleClick
     //      //make sure to set its type to a button
     return (
-      <span>TODO delete me</span>
+      <PageTemplate>
+        <div className="title">Login</div>
+        <div className="description">Description</div>
+        <form className="form">
+          <input placeholder="Your Email" type="text" value={this.state.email} onChange={this.handleInputEmail} />
+          <input placeholder="Enter Password" type="password" value={this.state.password} onChange={this.handleInputPassword} />
+          <button onClick={this.handleClick} type="button">
+            Login!
+          </button>
+        </form>
+      </PageTemplate>
     )
   }
 }

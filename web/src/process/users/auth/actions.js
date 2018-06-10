@@ -14,7 +14,7 @@ export function fetch(email, password) {
 export function* executeFetchToken({ email, password }) {
   try {
     if (password !== 123 && email !== 'bryce@helio.com') {
-      throw Error
+      throw new Error('incorrect login')
     }
     yield put(fetchSuccess({ id: '123', users: { '123': { name: 'Bryce' } } }))
   } catch (res) {
