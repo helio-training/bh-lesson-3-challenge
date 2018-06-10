@@ -6,6 +6,7 @@ import css from './index.css'
 import PageTemplate from '../'
 import { loginProcess } from 'Process/users/auth'
 import User from './Helmet.svg'
+import Password from './Helmet2.svg'
 
 class Login extends Component {
   constructor(props) {
@@ -59,6 +60,7 @@ class Login extends Component {
           <form>
             <div styleName="userIcon"><User /></div>
             <input placeholder="Your Email" type="email" value={this.state.email} onChange={this.handleInputEmail} />
+            <div styleName="passwordIcon"><Password /></div>
             <input placeholder="Enter Password" type="password" value={this.state.password} onChange={this.handleInputPassword} />
             <button type="button" onClick={this.handleClick}>Login</button>
             <a href="https://www.placeholder.com">Forgot Password?</a>
