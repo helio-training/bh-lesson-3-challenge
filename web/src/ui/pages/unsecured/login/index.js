@@ -5,6 +5,7 @@ import CSSModules from 'react-css-modules'
 import css from './index.css'
 import PageTemplate from '../'
 import { loginProcess } from 'Process/users/auth'
+import User from './Helmet.svg'
 
 class Login extends Component {
   constructor(props) {
@@ -51,9 +52,12 @@ class Login extends Component {
     return (
       <div styleName="frame">
         <PageTemplate>
-          <div styleName="title">Welcome to Rome</div>
-          <div styleName="description">Sign in with your information below</div>
+          <section>
+            <div styleName="title">Welcome to Rome</div>
+            <div styleName="description">Sign in with your information below</div>
+          </section>
           <form>
+            <div styleName="userIcon"><User /></div>
             <input placeholder="Your Email" type="email" value={this.state.email} onChange={this.handleInputEmail} />
             <input placeholder="Enter Password" type="password" value={this.state.password} onChange={this.handleInputPassword} />
             <button type="button" onClick={this.handleClick}>Login</button>
