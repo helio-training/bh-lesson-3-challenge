@@ -1,29 +1,34 @@
 /* Make the styles to create the same look as shown in class */
-title {
+.title {
     
 }
-description {
+.description {
+font-size: 20px;
+margin: 0 0 20px 0;
 
 }
-form {
-
-
+.form {
+ text-align: left;
 }
+
 h1 {
     font-size: 30px;
 
 }
 h2 {
     font-size: 20px;
+   
 }
 button{
     color: #ffffff;
     background-color: rgb(25, 185, 25);
-    width: 224px;
-    padding:10px;
+    width: 242px;
+    padding: 5px;
     margin: 5px;
     border-radius: 5px;
     font-size: 25px;
+    height: 41px;
+
 }
 input{
     margin: 5px;
@@ -35,6 +40,9 @@ input{
     border-width: 1px;
 }
 
-.loginIcon{
+.icons{
     height: 5px;
+    position: absolute;
+    padding-top: 12px;
+    padding-left: 16px;
 }

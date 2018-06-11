@@ -52,13 +52,15 @@ class Login extends Component {
     //      //make sure to set its type to a button
     return (
       <PageTemplate>
-        <div stylename="title"><h1>Welcome to Hell</h1></div>
-        <div stylename="description"><h2>Sign in with your soul below</h2></div>
-        <form stylename="form">
-          <div styletype="loginIcon"><User /></div>
+        <div styleName="title">
+          <h1>Welcome to Hell</h1>
+        </div>
+        <div styleName="description">Sign in with your soul below</div>
+        <form styleName="form">
+          <div styleName="icons"><User /></div>
           <input type="text" placeholder="Your Email" value={this.state.email} onChange={this.handleInputEmail} />
           <br />
-          <div><Lock /></div>
+          <div styleName="icons"><Lock /></div>
           <input type="password" placeholder="Enter Password" value={this.state.password} onChange={this.handleInputPassword} />
           <br />
           <button type="button" onClick={this.handleClick}>
