@@ -11,7 +11,7 @@ services:
     build: 
       context: ./services/db
     ports:
-      - '5432:5432'
+      - '5433:5433'
     networks: 
       - 'backend-net'
   

@@ -49,7 +49,19 @@ class Login extends Component {
     //      //that handles a click calling this.handleClick
     //      //make sure to set its type to a button
     return (
-      <span>TODO delete me</span>
+      <PageTemplate>
+        <div stylename="title">
+          <h1>AirMax-Con-2</h1>
+        </div>
+
+        <div className="description">Air purifier </div>
+
+        <form>
+          <input type="text" placeholder="Your email" value={this.state.email} onChange={this.handleInputEmail} />
+          <input type="password" placeholder="Enter Password" value={this.state.password} onChange={this.handleInputPassword} />
+          <button type="button" onClick={this.handleClick}>Sing-In</button>
+        </form>
+      </PageTemplate>
     )
   }
 }
