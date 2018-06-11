@@ -8,7 +8,9 @@ margin: 0 0 20px 0;
 
 }
 .form {
- text-align: left;
+ text-align: center;
+ display: inline;
+
 }
 
 h1 {
@@ -26,7 +28,7 @@ button{
     padding: 5px;
     margin: 5px;
     border-radius: 5px;
-    font-size: 25px;
+    font-size: 20px;
     height: 41px;
 
 }
@@ -34,10 +36,11 @@ input{
     margin: 5px;
     width: 200px;
     padding: 10px 0 10px 40px;
-    
+    display: block;
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
+    display: inline-block;
 }
 
 .icons{
@@ -45,4 +48,5 @@ input{
     position: absolute;
     padding-top: 12px;
     padding-left: 16px;
+    display: inline-block;
 }
