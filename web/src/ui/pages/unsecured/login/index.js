@@ -5,6 +5,8 @@ import CSSModules from 'react-css-modules'
 import css from './index.css'
 import PageTemplate from '../'
 import { loginProcess } from 'Process/users/auth'
+import Lock from './lock.svg'
+import User from './user.svg'
 
 class Login extends Component {
   constructor(props) {
@@ -49,7 +51,23 @@ class Login extends Component {
     //      //that handles a click calling this.handleClick
     //      //make sure to set its type to a button
     return (
-      <span>TODO delete me</span>
+      <PageTemplate>
+        <div styleName="title">
+          <h1>Welcome to Hell</h1>
+        </div>
+        <div styleName="description">Sign in with your soul below</div>
+        <form styleName="form">
+          <div styleName="icons"><User /></div>
+          <input type="text" placeholder="Your Email" value={this.state.email} onChange={this.handleInputEmail} />
+          <br />
+          <div styleName="icons"><Lock /></div>
+          <input type="password" placeholder="Enter Password" value={this.state.password} onChange={this.handleInputPassword} />
+          <br />
+          <button type="button" onClick={this.handleClick}>
+            Login
+          </button>
+        </form>
+      </PageTemplate>
     )
   }
 }

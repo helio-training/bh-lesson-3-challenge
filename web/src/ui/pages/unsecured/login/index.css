@@ -1,1 +1,48 @@
 /* Make the styles to create the same look as shown in class */
+.title {
+    
+}
+.description {
+font-size: 20px;
+margin: 0 0 20px 0;
+
+}
+.form {
+ text-align: left;
+}
+
+h1 {
+    font-size: 30px;
+
+}
+h2 {
+    font-size: 20px;
+   
+}
+button{
+    color: #ffffff;
+    background-color: rgb(25, 185, 25);
+    width: 242px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 25px;
+    height: 41px;
+
+}
+input{
+    margin: 5px;
+    width: 200px;
+    padding: 10px 0 10px 40px;
+    
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.icons{
+    height: 5px;
+    position: absolute;
+    padding-top: 12px;
+    padding-left: 16px;
+}
