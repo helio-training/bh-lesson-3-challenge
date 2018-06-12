@@ -1,3 +1,11 @@
+import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
+import CSSModules from 'react-css-modules'
+// import { Link } from 'react-router-dom'
+
+import css from './index.css'
+import connected from 'State/connect'
+
 // #Create a react class
 //  Go to the landing page and copy over all of the javascript/react
 //  Change the name of the class to be PyramidChallengePage
@@ -19,3 +27,13 @@
 
 
 // #Add styles as needed 
+
+class PyramidChallengePage extends Component {
+  render() {
+    return (
+      <span>Pyramid challenge</span>
+    )
+  }
+}
+
+export default withRouter(connected([], [])(CSSModules(PyramidChallengePage, css)))
