@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import CSSModules from 'react-css-modules'
 
 import css from './index.css'
-import PageTemplate from '../'
+// import PageTemplate from '../'
 import { loginProcess } from 'Process/users/auth'
 
 class Login extends Component {

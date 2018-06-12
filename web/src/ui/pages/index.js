@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Route, Switch, withRouter } from 'react-router-dom'
+import { Redirect, Route, Switch, withRouter } from 'react-router-dom'
 import CSSModules from 'react-css-modules'
 
 import css from './index.css'
@@ -13,6 +13,7 @@ import BadRequest from './bad-request/'
 
 // Secure Pages
 import landing from './secured/landing'
+import pyramid from './secured/challenges/pyramid'
 
 // Unsecured Pages
 import login from './unsecured/login/'
@@ -28,6 +29,10 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={login} />,
             <Route exact path="/landing" component={protectedRoute(landing)} />
+            <Route exact path="/challenges" component={protectedRoute(() => {
+              <Redirect to={{ pathname: '/landing', state: { from: this.props.location } }} />
+            })} />
+            <Route exact path="/challenges/pyramid" component={protectedRoute(pyramid)} />
             <Route component={BadRequest} />
           </Switch>
         </div>
