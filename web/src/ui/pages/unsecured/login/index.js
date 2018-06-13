@@ -52,8 +52,8 @@ class Login extends Component {
     //      //make sure to set its type to a button
     return (
       <PageTemplate>
-        <div className="title">Login</div>
-        <div className="description">Description</div>
+        <div className="title">Welcome</div>
+        <div className="description">Home Page</div>
         <form className="form">
           <input placeholder="Your Email" type="text" value={this.state.email} onChange={this.handleInputEmail} />
           <input placeholder="Enter Password" type="password" value={this.state.password} onChange={this.handleInputPassword} />

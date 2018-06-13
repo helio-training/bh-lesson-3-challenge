@@ -1,1 +1,15 @@
 /* Make the styles to create the same look as shown in class */
+body {
+    justify-content: center; 
+}
+.title{
+    
+    flex-grow: 1;
+
+}
+button {
+    background-color:rgb(90, 153, 90);
+    box-shadow: gray;
+    padding: 5px;
+    margin: 5px;
+}

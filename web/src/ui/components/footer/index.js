@@ -18,19 +18,19 @@ class Footer extends Component {
       <div className="container">
         <div className="right-section">
           <div className="first-row">
-            alsdkfj
+            test 1
           </div>
 
           <div className="second-row">
-            laksdjfladksf
+            test 2
           </div>
 
           <div className="third-row">
-            klasdjfal
+            test 3
           </div>
         </div>
         <div className="left-section">
-          klsdjfa
+          test 4
         </div>
       </div>
     )
