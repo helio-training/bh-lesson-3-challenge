@@ -8,13 +8,9 @@ margin: 0 0 20px 0;
 
 }
 .form {
-<<<<<<< HEAD
- text-align: left;
-=======
  text-align: center;
  display: inline;
 
->>>>>>> 19c3643dfdecaeef402d44c87ea94ce41852fc64
 }
 
 h1 {
@@ -32,11 +28,7 @@ button{
     padding: 5px;
     margin: 5px;
     border-radius: 5px;
-<<<<<<< HEAD
-    font-size: 25px;
-=======
     font-size: 20px;
->>>>>>> 19c3643dfdecaeef402d44c87ea94ce41852fc64
     height: 41px;
 
 }
@@ -44,18 +36,11 @@ input{
     margin: 5px;
     width: 200px;
     padding: 10px 0 10px 40px;
-<<<<<<< HEAD
-    
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 1px;
-=======
     display: block;
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
     display: inline-block;
->>>>>>> 19c3643dfdecaeef402d44c87ea94ce41852fc64
 }
 
 .icons{
@@ -63,8 +48,5 @@ input{
     position: absolute;
     padding-top: 12px;
     padding-left: 16px;
-<<<<<<< HEAD
-=======
     display: inline-block;
->>>>>>> 19c3643dfdecaeef402d44c87ea94ce41852fc64
 }

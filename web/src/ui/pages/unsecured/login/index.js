@@ -53,9 +53,9 @@ class Login extends Component {
     return (
       <PageTemplate>
         <div styleName="title">
-          <h1>Welcome to Hell</h1>
+          <h1>Welcome to Ipsom</h1>
         </div>
-        <div styleName="description">Sign in with your soul below</div>
+        <div styleName="description">Sign in with your credentials below</div>
         <form styleName="form">
           <div styleName="icons"><User /></div>
           <input type="text" placeholder="Your Email" value={this.state.email} onChange={this.handleInputEmail} />
