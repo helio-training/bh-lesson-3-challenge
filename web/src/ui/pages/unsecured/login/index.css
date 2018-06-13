@@ -1,1 +1,49 @@
 /* Make the styles to create the same look as shown in class */
+
+
+
+/*
+
+.header{
+    background-color: pink;
+    width: 100%;
+    height: 80px;
+*/
+
+
+.title{
+    background-color: white;
+    font-size: 18pt;
+    padding: 0;
+    border: 0;
+    margin: 0px 0 0 0px;
+}
+.description{
+    font-size: 8pt;
+    margin:10px 0 0 0px;
+
+}
+input  {
+    background-color:white;
+
+
+    width: 200px;
+    display:block;
+    margin:20px 0 0 8px;
+
+
+}
+
+button{
+    color: white;
+    background-color: rgb(19, 235, 19);
+    font-size: 12pt;
+    padding: 50;
+    border: 0;
+    width:200px;
+    margin: 20px 0 0 8px;
+    display:block;
+}
+
+<.a{}
+.form{}
