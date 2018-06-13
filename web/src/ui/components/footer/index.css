@@ -1,0 +1,119 @@
+  
+ :global {
+    body {
+      margin: 10%;
+      margin-top: 1%;
+      margin-bottom:1%;
+      margin-right:10%;
+      margin-left:10%;
+      padding: 0;
+      font-family: sans-serif;
+      height: 60%;
+      align-content: center;
+      justify-content: center;
+    }
+  
+    #root {
+      height: 100%;
+      width: 100%;
+      max-width: 1440px; 
+      max-height: 1131.44px;
+    }
+ #Goft{
+    float: left;
+    background-color: inherit;
+  }
+  
+  #logopic{
+    height: 60px;
+    width: auto;
+  }
+  
+  #bottomnav {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+  }
+  
+  #bottomnav a {
+    float: right;
+    color: #000000;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  #bottomnav a:hover {
+    background-color: #ddd;
+    color: white;
+  }
+  
+  #bottomnav a.active {
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+  #bottomleft {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+  }
+  
+  #bottomleft a {
+    display: block;
+    float: left;
+    color: #000000;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  #bottomleft a:hover {
+    background-color: #ddd;
+    color: white;
+  }
+  #bottomcenter {
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+  }
+  
+  #bottomcenter a {
+    float: center;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  #bottomcenter a:hover {
+    background-color: #ddd;
+    color: white;
+  }
+  #fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  #fa:hover {
+      opacity: 0.7;
+  }
+  #fa-facebook {
+    background: #3B5998;
+    color: blue;
+  }
+  
+  #fa-twitter {
+    background: #55ACEE;
+    color: blue;
+  }
+  
+  #fa-linkedin {
+    background: #007bb5;
+    color: blue;
+  }
+
+}

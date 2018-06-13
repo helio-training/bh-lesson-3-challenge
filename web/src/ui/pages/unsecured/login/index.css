@@ -1,1 +1,73 @@
 /* Make the styles to create the same look as shown in class */
+
+
+.title {
+    font-size: 30px;
+    margin: 7px 8px;
+    background-color: inherit;
+}
+.description {
+    position: center;
+    margin: 7px 8px;
+    margin-bottom: 10px;
+    background-color: inherit;
+    font-size: 14px;
+}
+
+ :global {
+    form {
+        display: block;
+        background-color: inherit;
+    }
+
+    #around-form input {
+        margin: 7px;
+        margin-top:25px;
+        border-color: #DDD;
+        padding: 15px 20px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 80px;
+        padding-right: 80px;
+        border-style: inset;
+        border-width: 1px;
+        border-top-width: 1px;
+        border-right-width: 1px;
+        border-bottom-width: 2px;
+        display: block;
+    }
+    #around-form button {
+        display: block;
+        border-style: inherit;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 15px 20px;
+        padding-top: 7px;
+        padding-right: 150px;
+        padding-bottom: 7px;
+        padding-left: 110px;
+        position: center;
+        border-width: 1px;
+        border-top-width: 1px;
+        border-right-width: 1px;
+        border-bottom-width: 2px;
+        background-color: rgb(39, 194, 8);
+        color: white;
+        font-style: bold;
+        font-size: 15px;
+    }
+    #Forgot-Password button1 {
+        display: block;
+        margin-top: 20px;
+        padding: 7px 15px;
+        padding-top: 7px;
+        padding-right: 50px;
+        padding-bottom: 7px;
+        padding-left: 50px;
+        position: center;
+        background-color: rgb(39, 194, 8);
+        color: white;
+        font-style: bold;
+        font-size: 15px;
+    }
+ }

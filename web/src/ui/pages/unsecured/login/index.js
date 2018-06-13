@@ -31,12 +31,13 @@ class Login extends Component {
   render() {
     return (
       <PageTemplate>
-        <div styleName="title">Home</div>
-        <div styleName="description">Login</div>
+        <div styleName="title">Welcome to Percv</div>
+        <div styleName="description">Sign in with your information below</div>
         <form id="around-form">
           <input placeholder="Your Email" type="email" value={this.state.email} onChange={this.handleInputEmail} />
           <input placeholder="Enter Password" type="password" value={this.state.password} onChange={this.handleInputPassword} />
           <button type="button" value={this.state.handleClick} onClick={this.handleClick}>Login</button>
+          <button1 id="Forgot Password?" value={this.state.handleClick} onClick={this.handleClick}>Forgot Password?</button1>
         </form>
       </PageTemplate>
     )

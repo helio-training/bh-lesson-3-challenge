@@ -1,1 +1,6 @@
 @import '../common-styles.css';
+.page {
+    background: inherit;
+    margin-block-end: 23%;
+    margin-block-start: 23%;
+}
