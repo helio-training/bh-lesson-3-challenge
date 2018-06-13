@@ -24,6 +24,7 @@ class App extends Component {
       <div styleName="App">
         <div styleName="header-container">
           <Header />
+<<<<<<< HEAD
         </div>
         <div styleName="content-container">
           <Switch>
@@ -38,6 +39,18 @@ class App extends Component {
         </div>
         <div styleName="footer-container">
           <Footer />
+=======
+          <div styleName="content-container">
+            <Switch>
+              <Route exact path="/" component={login} />,
+              <Route exact path="/landing" component={protectedRoute(landing)} />
+              <Route component={BadRequest} />
+            </Switch>
+          </div>
+          <div styleName="footer-container">
+            <Footer />
+          </div>
+>>>>>>> MY login in work
         </div>
       </div>
     )

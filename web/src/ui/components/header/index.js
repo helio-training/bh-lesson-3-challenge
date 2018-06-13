@@ -9,14 +9,21 @@ import css from './index.css'
 
 class Header extends Component {
   render() {
-    // Create a div with a class of container
-    //  // create a react-router link element with "to" attribute set to "/"
-    //  // create a div with a class of nav-links
-    //    //Create a NavLink Element
     return (
-      <span>TODO delete me</span>
+      <nav>
+        <div id="topnav">
+          <div1 id="Goft">
+            <img id="logopic" src="./golfLogo.png" alt="" />
+          </div1>
+          <a active="Sign up">Sign Up</a>
+          <a href="#need an account">Need an account?</a>
+        </div>
+      </nav>
     )
   }
 }
-
 export default CSSModules(Header, css)
+// Create a div with a class of container
+//  // create a react-router link element with "to" attribute set to "/"
+//  // create a div with a class of nav-links
+//    //Create a NavLink Element
