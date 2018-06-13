@@ -14,11 +14,11 @@ font-size: 14px;
 }
 input[type=email], input[type=password] {
   width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+  /*padding: 12px 20px;*/
+  margin: 6px 0;
+  /*display: inline-block;*/
+  border: 1px solid transparent;
+  /*box-sizing: border-box;*/
 }
 button {
   background-color: #4CAF50;
@@ -30,22 +30,27 @@ button {
   width: 100%;
   border-radius: 6px;
 }
-.mail1 {
-  width: 25px;
-  position: absolute;
-  padding: 15px;
-}
-.mail2 {
-  width: 25px;
-  position: absolute;
-}
 .lock1 {
+  float: left;
   width: 18px;
-  position: absolute;
-  padding: 18px;
+  position: relative;
+  padding-top: 5px;
 }
 .lock2 {
   width: 18px;
-  position: absolute;
-  padding: 18px;
+  position: relative;
+  float: left;
+  padding-top: 5px;
 }
+.container{
+  /* This bit sets up the horizontal layout */
+  display:flex;
+  flex-direction:row;
+
+  /* This bit draws the box around it */
+  border:1px solid grey;
+  border-radius: 5px;
+  padding:2px;
+  box-sizing: border-box;
+}
+
