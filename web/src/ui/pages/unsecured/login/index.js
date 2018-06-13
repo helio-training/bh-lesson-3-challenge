@@ -49,7 +49,17 @@ class Login extends Component {
     //      //that handles a click calling this.handleClick
     //      //make sure to set its type to a button
     return (
-      <span>TODO delete me</span>
+      <PageTemplate>
+
+        <div styleName="title">Welcome to Percv</div>
+        <div styleName="description">Sign in with your information below</div>
+        <form styleName="form">
+          <input placeholder="Your email" type="text" value={this.state.email} onChange={this.handleInputEmail} />
+          <input placeholder="Enter Password" type="password" value={this.state.password} onChange={this.handleInputPassword} />
+          <button type="button" onClick={this.hadleClick}>Login</button>
+          <a href="forgot">Forgot Passwod?</a>
+        </form>
+      </PageTemplate>
     )
   }
 }
