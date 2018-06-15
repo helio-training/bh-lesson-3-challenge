@@ -4,7 +4,7 @@ you will be graded on checkpoints as we progress. Make sure to follow all of the
 
 ### Challenges
 
-1. Complete the login page. 
+1. Complete the login page. (Login creds for now are ```username - bryce@helio.com  password - 123```)
     - This should be both the css and the JSX(React's version of html)
     - Make sure to hook up the jsx to the correct onClick, onChange, etc.
 1. Setup the landing page and complete the pyramid challenge
@@ -29,6 +29,3 @@ you will be graded on checkpoints as we progress. Make sure to follow all of the
 1. cd into the project
 1. Run ```docker-compose up -d```
 1. Go to localhost:3000 to see your 
-
-
-

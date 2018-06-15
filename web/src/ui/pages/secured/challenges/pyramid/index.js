@@ -9,7 +9,6 @@
 //  Create a div to hold our answer (the pyramid)
 //    inside this div we will output javascript (to do this we use {} braces to tell JSX we want to execute javascript)
 
-
 // #Create the class functions to handle input change
 // This will be similar to what I did for you on the login page
 //  with the exception that we will need to use some new javascript functions
@@ -17,7 +16,9 @@
 //  react key attribute
 //  this function should return a div for each item in the array
 
+// #Add styles as needed
 
+<<<<<<< HEAD:web/src/ui/pages/secured/pyramid-challenge/index.js
 // #Add styles as needed
 
 
@@ -44,3 +45,9 @@ handleInputChange = (event) => {
   }
 
   export default withRouter(connected([], [])(CSSModules(LandingPage, css)))
+=======
+// !!!!!The point of the page
+//  I should be able to enter in a number in the input and click the submit button
+//  This should then render a pyramid below the input and button that has the same number of levels as
+//  given in the input.
+>>>>>>> fa8b7bc6759f07a68dc5f0088797b44d2bf2ce1d:web/src/ui/pages/secured/challenges/pyramid/index.js
