@@ -33,40 +33,28 @@ class Login extends Component {
 
   render() {
     return (
-      <PageTemplate>
-          <h1>Welcome to Login</h1>
-        <div styleName="title">
-          <h1>Welcome to Login</h1>
+      </PageTemplate>
+        </form>
+            Forgot Password?
+          </div>
+          <div styleName="forgotLink">
+          <button type="button" onClick={this.handleClick}>
+          </button>
+            Login
+            onChange={this.handleInputPassword} />
+          <input type="password" value={this.state.password} placeholder="Enter Password"
+          <div styleName="loginIcon"><PassPic /></div>
+            onChange={this.handleInputEmail} />
+          <input type="text" value={this.state.email} placeholder="Your email"
+          <div styleName="loginIcon"><UserPic /></div>
+        </div>
+          Sign in with your information below
+        <form styleName="form">
         </div>
         <div styleName="description">
-          Sign in with your information below
-        </div>
-          Sign in with your information below
-          <div styleName="loginIcon"><UserPic /></div>
-        <form styleName="form">
-          <div styleName="loginIcon"><UserPic /></div>
-          <input type="text" value={this.state.email} placeholder="Your email"
-            onChange={this.handleInputEmail} />
-          </div>
-            Forgot Password?
-          <div styleName="forgotLink">
-          </button>
-            Login
-          <button type="button" onClick={this.handleClick}>
-          <div styleName="loginIcon"><PassPic /></div>
-            onChange={this.handleInputPassword} />
-          <input type="password" value={this.state.password} placeholder="Enter Password"
-        </form>
-      </PageTemplate>
-            Forgot Password?
-          </div>
-          <div styleName="forgotLink">
-          </button>
-            Login
-          <button type="button" onClick={this.handleClick}>
-          <input type="password" value={this.state.password} placeholder="Enter Password"
-            onChange={this.handleInputPassword} />
-          <div styleName="loginIcon"><PassPic /></div>
+          <h1>Welcome to Login</h1>
+        <div styleName="title">
+      <PageTemplate>
     )
   }
 }

@@ -1,3 +1,11 @@
+import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
+import CSSModules from 'react-css-modules'
+// import { Link } from 'react-router-dom'
+
+import css from './index.css'
+import connected from 'State/connect'
+
 // #Create a react class
 //  Go to the landing page and copy over all of the javascript/react
 //  Change the name of the class to be PyramidChallengePage
@@ -22,3 +30,13 @@
 //  I should be able to enter in a number in the input and click the submit button
 //  This should then render a pyramid below the input and button that has the same number of levels as
 //  given in the input.
+
+class PyramidChallengePage extends Component {
+  render() {
+    return (
+      <span>Pyramid challenge</span>
+    )
+  }
+}
+
+export default withRouter(connected([], [])(CSSModules(PyramidChallengePage, css)))
