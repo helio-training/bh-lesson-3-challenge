@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import CSSModules from 'react-css-modules'
 
 import css from './index.css'
-// import PageTemplate from '../'
+import PageTemplate from '../'
 import { loginProcess } from 'Process/users/auth'
 
 class Login extends Component {
@@ -49,7 +49,9 @@ class Login extends Component {
     //      //that handles a click calling this.handleClick
     //      //make sure to set its type to a button
     return (
-      <span>This will be the login page</span>
+      <PageTemplate>
+        The Login Page
+      </PageTemplate>
     )
   }
 }
