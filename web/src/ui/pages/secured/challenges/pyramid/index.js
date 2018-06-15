@@ -34,7 +34,7 @@ import connected from 'State/connect'
 class PyramidChallengePage extends Component {
   render() {
     return (
-      <span>Pyramid challenge</span>
+      <span>Pyramid Challenge</span>
     )
   }
 }
