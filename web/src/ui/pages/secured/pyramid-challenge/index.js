@@ -2,7 +2,7 @@
 //  Go to the landing page and copy over all of the javascript/react
 //  Change the name of the class to be PyramidChallengePage
 
-// #Add JSX(React's version of HTML) to the render's return 
+// #Add JSX(React's version of HTML) to the render's return
 //  Create a div wrapper for the page like we did for the login & landing
 //    Create an input with a type of number
 //    Add an onChange attribute and link it up to a function on the class (you will need to create this function)
@@ -18,4 +18,29 @@
 //  this function should return a div for each item in the array
 
 
-// #Add styles as needed 
+// #Add styles as needed
+
+
+
+class PyramidChallenge extends Component {
+    constructor(props) {
+        super(props)
+            this.state = {
+                numberOfLevels: null
+            }
+    }
+
+handleInputChange = (event) => {
+    this.setState({ numberOfLevels: event.target.value})
+}
+
+    render() {
+      return (
+        <div styleName="container">
+          <input type="number" value={this.state.numberOfLevels} onChange={this.handleInputChange} placeholder="Please enter number of levels" />
+        </div>
+      )
+    }
+  }
+
+  export default withRouter(connected([], [])(CSSModules(LandingPage, css)))
