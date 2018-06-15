@@ -15,7 +15,7 @@ class LandingPage extends Component {
 
     return (
       <div styleName="container">
-        <h1>Challenges</h1>
+        <header>Challenges</header>
         <ul>
           <li>
             <Link to="/challenges/pyramid">Pyramid Challenge</Link>

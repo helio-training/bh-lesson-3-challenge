@@ -46,7 +46,6 @@ input{
 .icons{
     height: 5px;
     position: absolute;
-    padding-top: 12px;
-    padding-left: 16px;
+    margin: 12px 0 0 16px;
     display: inline-block;
 }
