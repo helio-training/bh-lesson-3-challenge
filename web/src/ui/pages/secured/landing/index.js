@@ -14,7 +14,14 @@ class LandingPage extends Component {
     //      //Link with a "to" attribute that points to "/challenges/pyramid"
 
     return (
-      <span>TODO complete this!!</span>
+      <div styleNmame="container">
+        <h1>Challenges</h1>
+        <ol>
+          <li>
+            <Link to="/challenges/Pyramid Challenge">To Pyramid</Link>
+          </li>
+        </ol>
+      </div>
     )
   }
 }

@@ -22,3 +22,60 @@
 //  I should be able to enter in a number in the input and click the submit button
 //  This should then render a pyramid below the input and button that has the same number of levels as
 //  given in the input.
+import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
+import CSSModules from 'react-css-modules'
+import css from './index.css'
+import connected from 'State/connect'
+
+class PyramidChallenge extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      numberOfLevels: '',
+      pyramid: []
+    }
+  }
+
+  // handleInputchange = (event) => {
+  //   event.preventDefault()
+  //   this.setState({ numberoflevels: event.target.value })
+  // }
+
+  handleButtonClick = () => {
+    this.setState({ pyramid: this.createPyramidArray() })
+  }
+
+  createPyramidArray() {
+    if (this.state.numberOfLevels === '') return
+    const expression = '-Sucka Free Coding'
+    const tempPyramid = []
+    for (let i = 0; i < this.state.numberOfLevels; i++) {
+      tempPyramid.push(expression.repeat(i + 1).concat('-'))
+    }
+
+    return tempPyramid
+  }
+
+  render() {
+    console.log('Here I am in the render', this.state.numberOfLevels)
+    console.log('My pyramid looks like this', this.state.pyramid)
+    return (
+      <div styleName="container">
+        <form>
+          <input type="number" value={this.state.numberOfLevels} onChange={(e) => { this.setState({ numberOfLevels: e.target.value }) }} placeholder="Please enter the number of levels" />
+          <button type="button" onClick={this.handleButtonClick}>Submit</button>
+          <div styleName="pyramid-output">
+            {
+              this.state.pyramid.map((level) => {
+                return (<div>{level}</div>)
+              })
+            }
+          </div>
+        </form>
+      </div>
+    )
+  }
+}
+
+export default withRouter(connected([], [])(CSSModules(PyramidChallenge, css)))
