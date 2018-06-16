@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import CSSModules from 'react-css-modules'
 
 import css from './index.css'
-// import PageTemplate from '../'
+import PageTemplate from '../'
 import { loginProcess } from 'Process/users/auth'
 
 class Login extends Component {
@@ -55,7 +55,7 @@ class Login extends Component {
         <form styleName="form">
           <input placeholder="Your email" attribute="text" value={this.state.email}
             onChange={this.handleInputEmail} />
-          <input placeholder="Enter Password" attribute="password" value={this.state.password}onChange={this.handleInputPassword} />
+          <input placeholder="Enter Password" type="password" value={this.state.password}onChange={this.handleInputPassword} />
         </form>
         <button type="button" onClick={this.handleClick}>Login</button>
         <a styleName="forgot" href="#">Forgot Password?</a>
