@@ -7,28 +7,17 @@ import connected from 'State/connect'
 
 class LandingPage extends Component {
   render() {
-    // Create a div with a class of container
-<<<<<<< HEAD
-    //  //Create a heading with the title of Challenges
-    //  //Create an ordered list
-    //    //Create a list item that is a:
-    //      //Link with a "to" attribute that points to "/pyramid-challenge"
     return (
       <div styleName="container">
-        <h1>Challenges</h1>
-        <ol>
-          <li><Link to="/challenges/pyramid">Pyramid Challenge</Link></li>
-        </ol>
+        <div styleName="sub-container">
+          <h1>Challenges</h1>
+          <ol>
+            <li>
+              <Link to="/challenges/pyramid">Pyramid Challenges</Link>
+            </li>
+          </ol>
+        </div>
       </div>
-=======
-    //  //Create a header with the title of Challenges
-    //  //Create an ordered list
-    //    //Create a list item that is a:
-    //      //Link with a "to" attribute that points to "/challenges/pyramid"
-
-    return (
-      <span>TODO complete this!!</span>
->>>>>>> fa8b7bc6759f07a68dc5f0088797b44d2bf2ce1d
     )
   }
 }

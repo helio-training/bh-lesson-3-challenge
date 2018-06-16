@@ -1,0 +1,22 @@
+
+.container{
+
+    margin: auto;
+    width: 250px;
+}
+
+.sub-container {
+    height: 130px;
+    margin: auto;
+    background-color: #ff7907;
+    width: 200px;
+    padding: 25px;
+    border-radius: 20px;
+    color: #e5ba9a;
+}
+
+.firstChallenge, .firstChallenge Link {
+    margin: auto;
+    color: #bf9881;
+    text-decoration: none;
+}

@@ -1,4 +1,38 @@
 /* Make the styles to create the same look as shown in class */
+:global {
+  input[type=email], input[type=password] {
+    width: 95%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-size: 20px;
+    opacity: .4;
+    }
+
+  input[placeholder] {
+    padding-left: 30px;
+  }
+
+  button {
+    background-color: #22BA3E;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 95%;
+    border-radius: 6px;
+    }
+
+  a {
+    text-decoration: none;
+    font-size: 12px;
+    }
+
+}
 
 .frame {
   margin: auto;
@@ -6,12 +40,18 @@
 
 }
 
-PageTemplate{
+/* PageTemplate{
     border-radius: 6px;
     size: 600px;
     width: 250px;
-  }
+  } */
 
+
+/* User {
+  width: 5 px;
+  position: relative;
+  up: 20px;
+} */
 .title {
   margin-top: -15px;
   font-size: 28px;
@@ -23,37 +63,6 @@ PageTemplate{
   font-size: 12px;
   }
 
-input[type=email], input[type=password] {
-  width: 95%;
-  padding: 10px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-  border-radius: 6px;
-  font-size: 20px;
-  opacity: .4;
-  }
-
-input[placeholder] {
-  padding-left: 30px;
-}
-
-button {
-  background-color: #22BA3E;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 95%;
-  border-radius: 6px;
-  }
-
-a {
-  text-decoration: none;
-  font-size: 12px;
-  }
 
 
 .userIcon {
@@ -63,11 +72,6 @@ a {
   top: 158px;
 }
 
-User {
-  width: 5 px;
-  position: relative;
-  up: 20px;
-}
 
 .passwordIcon {
   position: absolute;
