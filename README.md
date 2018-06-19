@@ -17,6 +17,7 @@ you will be graded on checkpoints as we progress. Make sure to follow all of the
     - You will be required to move your old css used for the pages over to a file located in the public folder and call it default.css
     - You will also be required to create a default.html file and recreate the whole login page in pure html (a lot of copy pasting and small tweaks). It link in the head to the default.css above so your styles carry over.
     - instead of your previous css you will create new css code using flexbox (we will go over this in class)
+    - (Extra Credit) Add a script tag that will interact with the user...make it change something on the page. This will give you an extra 15 points.
 ### Clone down the project (don't fork)
 1. Clone this repo down
 1. Create a branch with the following syntax ```<lastname>/<firstname>-react-challenge```
