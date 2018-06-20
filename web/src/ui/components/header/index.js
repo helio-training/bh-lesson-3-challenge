@@ -14,7 +14,7 @@ class Header extends Component {
     //  // create a div with a class of nav-links
     //    //Create a NavLink Element
     return (
-      <span>TODO delete me</span>
+      <div styleName="container" />
     )
   }
 }

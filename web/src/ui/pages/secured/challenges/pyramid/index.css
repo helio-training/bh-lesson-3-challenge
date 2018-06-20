@@ -1,0 +1,14 @@
+.container {
+display: block;
+}
+
+.pyramid-output {
+  border-width: 2px;
+  border-color: black
+
+}
+.pyramid-form {
+  
+ height: 900px;
+ display: block;
+}

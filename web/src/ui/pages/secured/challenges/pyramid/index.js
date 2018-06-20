@@ -26,6 +26,7 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import CSSModules from 'react-css-modules'
+
 import css from './index.css'
 import connected from 'State/connect'
 
@@ -33,21 +34,51 @@ class PyramidChallengePage extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      numberOfLevels: ''
+      numberOfLevels: '',
+      pyramid: []
     }
   }
-    handleInputChange =(event) => {
-      this.setState({ numberOfLevels: event.target.value })
-    }
-    render() {
-      console.log('Here I am in the render', this.state.numberOfLevels)
-      return (
-        <div className="container">
-          <input type="number" value={this.state.numberOfLevels} onChange={this.handleInputChange} placeholder="Enter number of levels" />
 
-        </div>
-      )
+  handleInputChange = (event) => {
+    event.preventDefault()
+    this.setState({ numberOfLevels: event.target.value })
+  }
+
+  handleButtonClick = () => {
+    this.setState({ pyramid: this.createPyramidArray() })
+  }
+
+  createPyramidArray = () => {
+    if (this.state.numberOfLevels === '') return
+    const expression = '-*'
+
+    const p = []
+    for (let i = 0; i < this.state.numberOfLevels; i++) {
+      p.push(expression.repeat(i + 1).concat('-'))
     }
+
+    return p
+  }
+
+  render() {
+    console.log('Here I am in the render', this.state.numberOfLevels)
+    console.log('My pyramid looks like this', this.state.pyramid)
+    return (
+      <div className="container">
+        <form className="pyramid-form">
+          <h1>Build your own pyramid!</h1>
+          <input type="number" value={this.state.numberOfLevels} onChange={this.handleInputChange} placeholder="Enter number of levels" />
+          <br />
+          <button type="button" onClick={this.handleButtonClick}>Submit</button>
+          <div styleName="pyramid-output">
+            {this.state.pyramid.map((level, index) => {
+              return <div key={index}>{level}</div>
+            })}
+          </div>
+        </form>
+      </div>
+    )
+  }
 }
 
 export default withRouter(connected([], [])(CSSModules(PyramidChallengePage, css)))

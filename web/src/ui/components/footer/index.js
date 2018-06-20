@@ -15,7 +15,7 @@ class Footer extends Component {
     //  //create a div with a class of left-section
     //    //Put some random text in for now
     return (
-      <span>TODO delete me</span>
+      <div styleName="container" />
     )
   }
 }
