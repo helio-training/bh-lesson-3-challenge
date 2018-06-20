@@ -18,66 +18,64 @@
 
 // #Add styles as needed
 
-<<<<<<< Updated upstream:web/src/ui/pages/secured/challenges/pyramid/index.js
 // !!!!!The point of the page
 //  I should be able to enter in a number in the input and click the submit button
 //  This should then render a pyramid below the input and button that has the same number of levels as
 //  given in the input.
-=======
+
 // #Add styles as needed
 
-
-
 import React, { Component } from 'react'
+// import { withRouter, Link } from 'react-router-dom'
 import { withRouter } from 'react-router-dom'
 import CSSModules from 'react-css-modules'
-import { Link } from 'react-router-dom'
 
 import css from './index.css'
 import connected from 'State/connect'
 
 class PyramidChallengePage extends Component {
-    constructor(props){
-        super(props)
-            this.state ={
-                numberOfLevels: ''
-                }
-            }
-            handleInputChange = () => {
-            this.setState({ numberOfLevels: event.target.value})
-
-        }
-
-            render() {
-                console.log("you want to put money in your bank account")
-    // Create a div with a class of container
-    //  //Create a header with the title of Challenges
-    //  //Create an ordered list
-    //    //Create a list item that is a:
-    //      //Link with a "to" attribute that points to "/pyramid-challenge"
-
-
-
-
-
-            return (
-                <div styleName="container">
-                    <input type="number" value={this.state.numberOfLevels} onChangej={this.handleInputChange}placeholder="Please enter the number of levels"/>
-
-                        <h1>Challenges</h1>
-                            <ol>
-                                <li>
-                                    < Link to= "/challenges/pyramid">Pyramid</Link>
-                                </li>
-                            </ol>
-
-
-                        </div>
-            }
-        }
+  constructor(props) {
+    super(props)
+    this.state = {
+      numberOfLevels: '',
+      pyramid: []
     }
+  }
 
+handleInputeChange = (event) => {
+  event.preventDefault()
+  this.setState({ numberOfLevels: event.target.value })
+}
 
+handleButtonClick = () => {
+  this.setState({ pyramid: this.createPyramidArray() })
+}
 
-export default withRouter(connected([], [])(CSSModules(LandingPage, css)))
->>>>>>> Stashed changes:web/src/ui/pages/secured/pyramid-challenge/index.js
+createPyramidArray = () => {
+  if (this.state.numberOfLevels === '') { return }
+  const expression = '-*'
+
+  const tempPyramid = []
+  for (let i = 0; i < this.state.numberOfLevels; i++) {
+    tempPyramid.push(expression.repeat(i + 1).concat('-'))
+  }
+
+  return tempPyramid
+}
+render() {
+  return (
+    <div id="container">
+      <form>
+        <input type="number" value={this.state.numberOfLevels} onChange={this.handleInputeChange} placeholder="please enter the numbers of Levels" />
+        <button type="button" onClick={this.handleButtonClick}>Submit</button>
+        <div id="pyramide-output" >
+          {this.state.pyramid.map((level, index) => {
+            return <div key={index}>{level}</div>
+          })}
+        </div>
+      </form>
+    </div>
+  )
+}
+}
+export default withRouter(connected([], [])(CSSModules(PyramidChallengePage, css)))
