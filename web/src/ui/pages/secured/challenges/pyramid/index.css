@@ -1,0 +1,8 @@
+.container {
+}
+
+.pyramidBox input,
+.pyramidBox button {
+    display: inline;
+    width: auto;
+}
