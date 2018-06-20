@@ -17,20 +17,20 @@ class Footer extends Component {
     //    //Put some random text in for now
     return (
       <nav>
-        <div id="bottomnav">
-          <a active="Sign up">SIGN UP FOR OUR FREE NEWSLETTER </a>
-        </div>
-        <div1 id="bottomcenter">
-          <a href="Social">Social</a>
-          <a href="#fa-facebook" id="fa fa-facebook" />
-          <a href="#fa-twitter" id="fa fa-twitter" />
-          <a href="#fa-linkedin" id="fa fa-linkedin" />
-        </div1>
-        <div2 id="bottomleft">
+        <div id="bottomleft">
           <a href="#General">General</a>
           <a href="#FAQs">FAQs</a>
           <a href="#Contact Us">Contact Us</a>
-        </div2>
+        </div>
+        <div id="bottomcenter">
+          <a href="Social">Social</a>
+          <a href="#fa-facebook" id="fa fa-facebook" className="fab fa-facebook-square" />
+          <a href="#fa-twitter" id="fa fa-twitter" className="fab fa-twitter-square" />
+          <a href="#fa-linkedin" id="fa fa-linkedin" className="fab fa-linkedin" />
+        </div>
+        <div id="bottomnav">
+          <a href="Sign up">SIGN UP FOR OUR FREE NEWSLETTER </a>
+        </div>
       </nav>
     )
   }

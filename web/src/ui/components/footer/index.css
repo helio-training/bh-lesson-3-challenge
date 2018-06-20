@@ -24,18 +24,23 @@
     background-color: inherit;
   }
   
+  nav {
+    width: 100%
+  }
   #logopic{
     height: 60px;
     width: auto;
   }
   
   #bottomnav {
+    display: inline-block;
     background-color: rgb(255, 255, 255);
     overflow: hidden;
   }
   
   #bottomnav a {
-    float: right;
+    display: inline-block;
+    float: none;
     color: #000000;
     text-align: left;
     padding: 14px 16px;
@@ -53,13 +58,14 @@
     color: rgb(0, 0, 0);
   }
   #bottomleft {
+    display: inline-block;
     background-color: rgb(255, 255, 255);
     overflow: hidden;
   }
   
   #bottomleft a {
-    display: block;
-    float: left;
+    display: inline-block;
+    float: none;
     color: #000000;
     text-align: left;
     padding: 14px 16px;
@@ -72,12 +78,14 @@
     color: white;
   }
   #bottomcenter {
+    display:inline-block;
     background-color: rgb(255, 255, 255);
     overflow: hidden;
   }
   
   #bottomcenter a {
-    float: center;
+    display: inline-block;
+    float: none;
     color: #000000;
     text-align: center;
     padding: 14px 16px;

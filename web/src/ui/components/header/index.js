@@ -12,9 +12,9 @@ class Header extends Component {
     return (
       <nav>
         <div id="topnav">
-          <div1 id="Goft">
+          <div id="Goft">
             <img id="logopic" src="./golfLogo.png" alt="" />
-          </div1>
+          </div>
           <a active="Sign up">Sign Up</a>
           <a href="#need an account">Need an account?</a>
         </div>
