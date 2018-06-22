@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { withRouter, Link } from 'react-router-dom'
 import CSSModules from 'react-css-modules'
-import MoodComp from './mood'
 
 import css from './index.css'
 import connected from 'State/connect'
@@ -22,7 +21,6 @@ class LandingPage extends Component {
             <Link to="/.challenges/pyramid" > pyramid challenges </Link>
           </li>
         </ol>
-        <MoodComp selectedMood="happy" />
       </div>
 
     )

@@ -28,11 +28,11 @@ class App extends Component {
         <div styleName="content-container">
           <Switch>
             <Route exact path="/" component={login} />,
-            <Route exact path="/landing" component={protectedRoute(landing)} />
+            <Route exact path="/landing" component={landing} />
             <Route exact path="/challenges" component={protectedRoute(() => {
               <Redirect to={{ pathname: '/landing', state: { from: this.props.location } }} />
             })} />
-            <Route exact path="/challenges/pyramid" component={protectedRoute(pyramid)} />
+            <Route exact path="/challenges/pyramid" component={pyramid} />
             <Route component={BadRequest} />
           </Switch>
         </div>
