@@ -17,11 +17,11 @@ class Footer extends Component {
     return (
       <div className="footer-container">
         <div className="right-section">
-          <div className="first-row">First Row</div>
-          <div className="second-row">Second Row</div>
-          <div className="third-row">Third Row</div>
+          <div className="first-row"><a href="first-row">First Row</a></div>
+          <div className="second-row"><a href="second-row">Second Row</a></div>
+          <div className="third-row"><a href="third-row">Third Row</a></div>
         </div>
-        <div className="left-section">Random Text</div>
+        <div className="left-section">Welcome to the site!</div>
       </div>
     )
   }
