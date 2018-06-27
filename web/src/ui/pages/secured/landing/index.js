@@ -34,16 +34,8 @@ class LandingPage extends Component {
             <Link to="/challenges/Pyramid Challenge">To Pyramid</Link>
           </li>
         </ol>
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-        <Mood />
-        <MoodFilter />
-=======
         <Mood zipCode={this.state.parentValue} zipChange={this.handleZipChange} />
         <MoodFilter zipCode={this.state.parentValue} zipChange2={this.handleZipChange} />
->>>>>>> origin/master
->>>>>>> Stashed changes
       </div>
     )
   }

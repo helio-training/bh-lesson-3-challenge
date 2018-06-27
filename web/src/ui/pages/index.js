@@ -29,15 +29,9 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={login} />,
             <Route exact path="/landing" component={landing} />
-<<<<<<< Updated upstream
-            <Route exact path="/challenges" component={protectedRoute(() => {
-              <Redirect to={{ pathname: '/landing', state: { from: this.props.location } }} />
-            })} />
-=======
             <Route exact path="/challenges" component={() => {
               <Redirect to={{ pathname: '/landing', state: { from: this.props.location } }} />
             }} />
->>>>>>> Stashed changes
             <Route exact path="/challenges/pyramid" component={pyramid} />
             <Route component={BadRequest} />
           </Switch>
