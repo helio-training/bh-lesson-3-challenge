@@ -4,6 +4,8 @@ import CSSModules from 'react-css-modules'
 
 import css from './index.css'
 import connected from 'State/connect'
+import Mood from './mood'
+import Moodfilter from './mood-filter'
 
 class LandingPage extends Component {
   render() {
@@ -21,8 +23,9 @@ class LandingPage extends Component {
             <Link to="/.challenges/pyramid" > pyramid challenges </Link>
           </li>
         </ol>
+        <Mood />
+        <Moodfilter />
       </div>
-
     )
   }
 }
