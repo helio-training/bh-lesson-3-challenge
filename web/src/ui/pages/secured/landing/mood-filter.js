@@ -1,32 +1,26 @@
+import PropTypes from 'prop-types'
 import React, { Component } from 'react'
-import CSSModules from 'react-css-modules'
-// import PropTypes from 'prop-types'
-import css from './index.css'
+
+const { string, func } = PropTypes
 
 class MoodFilterComp extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      zipCode: ''
-    }
-  }
-
-  handleZipCodeChange = (userEvent) => {
-    userEvent.preventDefault()
-    this.setState({ zipCode: userEvent.target.value })
+  static propTypes = {
+    zipCode: string.isRequired,
+    zipChange2: func.isRequired
   }
 
   render() {
     return (
       <div>
-        im the mood Mood Filter
+        I'm the mood filter
         <input
           type="text"
-          value={this.state.zipCode}
-          placeholder="enter a zip code"
-          on change={this.handleZipCodeChange} />
+          value={this.props.zipCode}
+          placeholder="Enter a zip code"
+          onChange={this.props.zipChange2} />
       </div>
     )
   }
 }
-export default CSSModules(MoodFilterComp, css)
+
+export default MoodFilterComp
