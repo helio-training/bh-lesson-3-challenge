@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import CSSModules from 'react-css-modules'
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import css from './index.css'
 // import Logo from './logo.svg'
@@ -14,7 +14,10 @@ class Header extends Component {
     //  // create a div with a class of nav-links
     //    //Create a NavLink Element
     return (
-      <div className="header-container">MEH</div>
+      <div className="header-container">
+        <Link to="/about">About</Link>
+        <div className="nav-links">/</div>
+      </div>
     )
   }
 }
