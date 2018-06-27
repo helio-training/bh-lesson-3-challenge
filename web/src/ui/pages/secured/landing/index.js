@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { withRouter, Link } from 'react-router-dom'
 import CSSModules from 'react-css-modules'
 
+import Mood from './mood'
+import MoodFilter from './mood-filter'
 import css from './index.css'
 import connected from 'State/connect'
 
@@ -14,7 +16,16 @@ class LandingPage extends Component {
     //      //Link with a "to" attribute that points to "/challenges/pyramid"
 
     return (
-      <span>TODO complete this!!</span>
+      <div className="container">
+        <h1>Challenges</h1>
+        <ol>
+          <li>This Link</li>
+          <li>That Link</li>
+          <Link to="/challenge/pyramid">To Do complete this!!</Link>
+        </ol>
+        <Mood />
+        <MoodFilter />
+      </div>
     )
   }
 }

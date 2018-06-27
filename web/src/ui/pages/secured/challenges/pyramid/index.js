@@ -23,121 +23,54 @@
 //  This should then render a pyramid below the input and button that has the same number of levels as
 //  given in the input.
 
-Recent
-Contacts
-Recent
+import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
+import CSSModules from 'react-css-modules'
 
-Melissa and Zachary
-7: 11 PM
-Zachary: class PyramidChallenge extends Component {
-    constructor(props) {
-        super(props)
-        Profile picture of Melissa Conn.
-        Melissa Conn
-        6 / 19
-        Profile picture of Bryce Hayden.
-        Bryce Hayden
-        6 / 19
-        https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-ag
-        T - Bot
-        2 / 12
-        What can I help you with today ?
+import css from './index.css'
+import connected from 'State/connect'
 
-            Melissa,
-        Zachary
-2 participants
+class PyramidChallenge extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      numberOfLevels: '',
+      pyramid: []
+    }
+  }
 
-        Conversation
-        Files
+    handleInputChange = (event) => {
+      event.preventDefault()
+      this.setState({ numberOfLevels: event.target.value })
+    }
+    handleButtonClick = () => {
+      this.setState({ pyramid: this.creatPyramidArray() })
+    }
+    creatPyramidArray = () => {
+      if (this.state.numberOfLevels === '') return
+      const expression = '-*'
+      const tempPyramid = []
+      for (let i = 0; i < this.state.numberOfLevels; i++) {
+        tempPyramid.push(expression.repeat(i + 1).concat('-'))
+      }
+      return tempPyramid
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        Zachary Hutto added Melissa Conn and Dianne Hodnet to the conversation.
-        Last read
-        Profile picture of Zachary Hutto.
-        Zachary Hutto
-        7: 11 PM
-
-
-
-        class PyramidChallenge extends Component {
-            constructor(props) {
-                super(props)
-                this.state = {
-                    numberOfLevels: '',
-                    pyramid: []
-                }
-            }
-
-            handleInputChange = (event) => {
-                event.preventDefault()
-                this.setState({ numberOfLevels: event.target.value })
-            }
-            handleButtonClick = () => {
-                this.setState({ pyramid: this.creatPyramidArray() })
-            }
-            creatPyramidArray = () => {
-                if (this.state.numberOfLevels === '') return
-                const expression = '-*'
-                const tempPyramid = []
-                for (let i = 0; i < this.state.numberOfLevels; i++) {
-                    tempPyramid.push(expression.repeat(i + 1).concat('-'))
-                }
-                return tempPyramid
-            }
-
-            render() {
-                return (
-                    <div styleName="container">
-                        <h1>Build your Pyramid</h1>
-                        <form id="pyramidForm">
-                            <input type="number" placeholder="Enter number" value={this.state.numerOfLevels} onChange={this.handleInputChange} />
-                            <button type="button" onClick={this.handleButtonClick}>Submit</button>
-                            <div styleName="pyramidOutput">
-                                {this.state.pyramid.map((level, index) => {
-                                    return <div key={index}>{level}</div>
-                                })}
-                            </div>
-                        </form>
-                    </div>
-                )
-            }
-        }
-        export default withRouter(connected([], [])(CSSModules(PyramidChallenge, css)))
-        Type a new message
-
-
-
-
-
-
-
-
-        Zachary:
-
-
-
-        class PyramidChallenge extends Component {
-
-            constructor(props) {
-
-                supe…
+    render() {
+      return (
+        <div styleName="container">
+          <h1>Build your Pyramid</h1>
+          <form id="pyramidForm">
+            <input type="number" placeholder="Enter number" value={this.state.numerOfLevels} onChange={this.handleInputChange} />
+            <button type="button" onClick={this.handleButtonClick}>Submit</button>
+            <div styleName="pyramidOutput">
+              {this.state.pyramid.map((level, index) => {
+                return <div key={index}>{level}</div>
+              })}
+            </div>
+          </form>
+        </div>
+      )
+    }
+}
+export default withRouter(connected([], [])(CSSModules(PyramidChallenge, css)))
