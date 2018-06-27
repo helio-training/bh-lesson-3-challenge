@@ -1,0 +1,21 @@
+.container {
+  padding: 30px;
+
+}
+
+input {
+  width: 200px;
+  margin: auto;
+  height: 30px;
+}
+
+button2  {
+  padding: 20px;
+
+}
+
+.pyramid-output {
+  background: blue;
+
+
+}

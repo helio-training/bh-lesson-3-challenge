@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-// import { Link } from 'react-router-dom'
 import CSSModules from 'react-css-modules'
 
 import css from './index.css'
-// import PageTemplate from '../'
+import PageTemplate from '../'
 import { loginProcess } from 'Process/users/auth'
+// import Lock from './Lock.svg'
 
 class Login extends Component {
   constructor(props) {
@@ -49,7 +49,21 @@ class Login extends Component {
     //      //that handles a click calling this.handleClick
     //      //make sure to set its type to a button
     return (
-      <span>TODO delete me</span>
+      <PageTemplate>
+        <section>
+          <div styleName="title">Welcome to Percv</div>
+          <h1>User Login</h1>
+          <div styleName="description">Login with your email and password</div>
+        </section>
+
+        <form>
+          <div styleName="container">
+            <input type="text" placeholder="Your email" value={this.state.email} onChange={this.handleInputEmail} />
+            <input type="password" placeholder="Enter Password" value={this.state.password} onChange={this.handleInputPassword} />
+            <button type="button" onClick={this.handleClick}>Login</button>
+          </div>
+        </form>
+      </PageTemplate>
     )
   }
 }

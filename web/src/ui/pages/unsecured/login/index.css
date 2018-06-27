@@ -1,1 +1,54 @@
 /* Make the styles to create the same look as shown in class */
+.PageTemplate{
+  border-radius: 6px;
+  size: 600px;
+  border-style: inherit;
+}
+.title {
+font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+}
+.description {
+font-size: 14px;
+}
+
+.container  {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 20px 0;
+  display: inline-block;
+  /* border: 1px solid transparent; */
+  /* box-sizing: border-box; */
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 1px 0;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  border-radius: 5px;
+}
+.lock1 {
+  float: left;
+  width: 30px;
+  position: relative;
+  padding-top: 5px;
+}
+.lock2 {
+  width: 18px;
+  position: relative;
+  float: left;
+  padding-top: 5px;
+}
+.container{
+  display:flex;
+  flex-direction:row;
+  border:1px solid grey;
+  border-radius: 10px;
+  padding:2px;
+  box-sizing: border-box;
+}
