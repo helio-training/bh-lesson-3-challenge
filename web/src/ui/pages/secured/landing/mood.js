@@ -1,15 +1,19 @@
-// import PropTypes from 'prop-type'
+import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 
-const { stri}
+const { string, func } = PropTypes
+
 class MoodComp extends Component {
+  static propTypes = {
+    zipCode: string.isRequired,
+    zipChange: func.isRequired
+  }
   render() {
     return (
       <div>
-        I'm the mood
-        <input
-          type="text"
-          value={this.state.wackyValue}
+        <input type="text"
+          value={this.props.zipCode}
+          placeholder="Enter a zip code"
           onChange={this.props.zipChange} />
       </div>
     )

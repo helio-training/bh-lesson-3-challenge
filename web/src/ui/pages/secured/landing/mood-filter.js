@@ -1,27 +1,23 @@
-// import PropTypes from 'prop-type'
+import PropTypes from 'prop-types'
 import React, { Component } from 'react'
 
-class MoodFilterComp extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      wackyValue: ''
-    }
-  }
+const { string, func } = PropTypes
 
-  handleInputChange = (event) => {
-    console.log('HERE', this.state, event.target.value)
-    event.preventDefault()
-    this.setState({ wackyValue: event.target.value })
-    // event.preventDefault()
-    // this.setState({ wackyValue: event.target.value })
+class MoodFilterComp extends Component {
+  static propTypes = {
+    zipCode: string.isRequired,
+    zipChange2: func.isRequired
   }
 
   render() {
     return (
       <div>
         I'm the mood filter
-        <input type="text" value={this.state.wackyValue} onChange={this.handleInputChange} />
+        <input
+          type="text"
+          value={this.props.zipCode}
+          placeholder="Enter a zip code"
+          onChange={this.props.zipChange2} />
       </div>
     )
   }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import { withRouter, Link } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 import CSSModules from 'react-css-modules'
+
 import Mood from './mood'
 import MoodFilter from './mood-filter'
 import css from './index.css'
@@ -18,7 +19,6 @@ class LandingPage extends Component {
     event.preventDefault()
     this.setState({ parentValue: event.target.value })
   }
-
   render() {
     // Create a div with a class of container
     //  //Create a header with the title of Challenges
@@ -34,8 +34,8 @@ class LandingPage extends Component {
             <Link to="/challenges/pyramid">Pyramid Challenge</Link>
           </li>
         </ol>
-        <Mood zipCode={'84094'}/>
-        <MoodFilter zipCode={'84090'} />
+        <Mood zipCode={this.state.parentValue} zipChange={this.handleZipChange} />
+        <MoodFilter zipCode={this.state.parentValue} zipChange2={this.handleZipChange} />
       </div>
     )
   }
