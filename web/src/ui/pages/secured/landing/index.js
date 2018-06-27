@@ -1,11 +1,24 @@
 import React, { Component } from 'react'
-import { withRouter, Link } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 import CSSModules from 'react-css-modules'
 
+import Mood from './mood'
+import MoodFilter from './mood-filter'
 import css from './index.css'
 import connected from 'State/connect'
 
 class LandingPage extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      parentValue: ''
+    }
+  }
+
+  handleZipChange = (event) => {
+    event.preventDefault()
+    this.setState({ parentValue: event.target.value })
+  }
   render() {
     // Create a div with a class of container
     //  //Create a header with the title of Challenges
@@ -21,6 +34,16 @@ class LandingPage extends Component {
             <Link to="/challenges/Pyramid Challenge">To Pyramid</Link>
           </li>
         </ol>
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+        <Mood />
+        <MoodFilter />
+=======
+        <Mood zipCode={this.state.parentValue} zipChange={this.handleZipChange} />
+        <MoodFilter zipCode={this.state.parentValue} zipChange2={this.handleZipChange} />
+>>>>>>> origin/master
+>>>>>>> Stashed changes
       </div>
     )
   }

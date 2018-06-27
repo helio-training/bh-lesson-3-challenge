@@ -25,6 +25,10 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import CSSModules from 'react-css-modules'
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 import css from './index.css'
 import connected from 'State/connect'
 
@@ -32,6 +36,7 @@ class PyramidChallenge extends Component {
   constructor(props) {
     super(props)
     this.state = {
+<<<<<<< Updated upstream
       numberOfLevels: '',
       pyramid: []
     }
@@ -73,6 +78,21 @@ class PyramidChallenge extends Component {
             }
           </div>
         </form>
+=======
+      numberOfLevels: ''
+    }
+  }
+
+  handleInputChange = (event) => {
+    this.setState({ numberOfLevels: event.target.value })
+  }
+
+  render() {
+    console.log('HERE I am in the render', this.state.numberOfLevels)
+    return (
+      <div styleName="container">
+        <input type="number" value={this.state.numberOfLevels} onChange={this.handleInputChange} placeholder="Please enter the number of Levels" />
+>>>>>>> Stashed changes
       </div>
     )
   }

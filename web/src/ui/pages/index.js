@@ -3,7 +3,7 @@ import { Redirect, Route, Switch, withRouter } from 'react-router-dom'
 import CSSModules from 'react-css-modules'
 
 import css from './index.css'
-import { protectedRoute } from 'Process/users/auth'
+// import { protectedRoute } from 'Process/users/auth'
 import Footer from 'UI/components/footer'
 import Header from 'UI/components/header'
 import connected from 'State/connect'
@@ -29,9 +29,15 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={login} />,
             <Route exact path="/landing" component={landing} />
+<<<<<<< Updated upstream
             <Route exact path="/challenges" component={protectedRoute(() => {
               <Redirect to={{ pathname: '/landing', state: { from: this.props.location } }} />
             })} />
+=======
+            <Route exact path="/challenges" component={() => {
+              <Redirect to={{ pathname: '/landing', state: { from: this.props.location } }} />
+            }} />
+>>>>>>> Stashed changes
             <Route exact path="/challenges/pyramid" component={pyramid} />
             <Route component={BadRequest} />
           </Switch>
