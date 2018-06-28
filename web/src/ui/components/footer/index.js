@@ -15,7 +15,23 @@ class Footer extends Component {
     //  //create a div with a class of left-section
     //    //Put some random text in for now
     return (
-      <div styleName="container" />
+      <div styleName="container">
+        <div styleName="right-section">
+          right
+          <div styleName="first-row">
+          first
+          </div>
+          <div styleName="second-row">
+          second
+          </div>
+          <div styleName="third-row">
+          third
+          </div>
+        </div>
+        <div styleName="left-section">
+        left
+        </div>
+      </div>
     )
   }
 }

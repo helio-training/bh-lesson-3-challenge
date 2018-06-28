@@ -1,0 +1,80 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+header {
+    background-color: lightgray;
+    height: 50px;;
+}
+.title {
+  display: flex;
+  justify-content: center;
+    
+}
+.description {
+  font-size: 20px;
+  margin: 0 0 20px 0;
+  display: flex;
+  justify-content: center;
+
+}
+.form {
+ display: flex;
+ flex-direction: column;
+ align-self: center;
+
+
+}
+
+h1 {
+    font-size: 30px;
+    justify-content: center;
+
+}
+
+h2 {
+    font-size: 18px;
+   
+}
+button{
+    color: #ffffff;
+    background-color: rgb(25, 185, 25);
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    height: 41px;
+
+
+
+
+}
+input{
+    width: 210px;
+    padding: 10px 0 10px 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 15px;
+}
+
+.icons{
+    height: 5px;
+    position: absolute;
+    margin: 10px 0 0 10px;
+    display: inline-block;
+}
+
+.loginForm {
+    height: 300px;
+    width: 200px;
+}
+footer {
+    background-color: lightgray;
+}
+
+
+
