@@ -14,7 +14,9 @@ class Header extends Component {
     //  // create a div with a class of nav-links
     //    //Create a NavLink Element
     return (
-      <span>Zack's Page Header</span>
+      <div styleName="header-container">
+        <span styleName="left-side"><img styleName="bird" src="download.png" alt="" /></span><span styleName="need-login">Need an account? <button styleName="signUpButton">Sign Up!</button> </span>
+      </div>
     )
   }
 }

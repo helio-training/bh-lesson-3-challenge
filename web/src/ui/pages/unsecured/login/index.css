@@ -28,7 +28,7 @@ input {
     margin: 10px;
     font-size: 15px;
 }
-button{
+.loginButton{
     width: 100%;
     background-color: green;
     font-family: arial;

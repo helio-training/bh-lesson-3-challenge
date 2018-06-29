@@ -57,7 +57,7 @@ class Login extends Component {
             onChange={this.handleInputEmail} />
           <input placeholder="Enter Password" type="password" value={this.state.password}onChange={this.handleInputPassword} />
         </form>
-        <button type="button" onClick={this.handleClick}>Login</button>
+        <button styleName="loginButton" type="button" onClick={this.handleClick}>Login</button>
         <a styleName="forgot" href="#">Forgot Password?</a>
       </PageTemplate>
     )

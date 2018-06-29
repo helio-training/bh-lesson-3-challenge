@@ -1,0 +1,25 @@
+.header-container {
+  display: flex;
+  background-color: white;
+  margin: 10px;
+}
+
+.need-login {
+  margin-left: auto;
+}
+.left-side {
+
+}
+
+.bird {
+  height: 30px;
+  width: 35px;
+  background-color: green;
+  
+}
+
+.signUpButton {
+  color: green;
+  border: 2px solid green;
+  border-radius: 3px;
+}
