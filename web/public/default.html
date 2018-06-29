@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>BB HTML Login</title>
+    <meta name="description" content="HTML Login Page">
+    <meta name="author" content="Brad Butler">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+
+    <link rel="stylesheet" href="default.css">
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+
+    <script>
+        function ShowDate() {
+        document.getElementById("date").innerHTML = Date();
+    }
+    </script>
+
+  </head>
+  <body>
+    <div id="root">
+        <div class="App">
+            <div class="header-container">
+                <div class="container">
+                    <div class="nav-links">
+                        <div class="logoIcon">
+                            <img src="/images/logo.svg">
+                        </div>
+                        NavLink
+                    </div>
+                </div>
+            </div>
+            <div class="content-container">
+                <div class="page">
+                    <div class="page-content">
+                        <div class="title">
+                            <h1>Welcome to Login</h1>
+                        </div>
+                        <div class="description">Sign in with your information below</div>
+                        <form class="form">
+                            <div class="loginIcon"><img src="/images/user.svg"></div>
+                            <input type="text" value="" placeholder="Your email" />
+                            <div class="loginIcon"><img src="/images/pass.svg"></div>
+                            <input type="password" value="" placeholder="Enter Password" />
+                            <button type="button" onclick="ShowDate()">Login</button>
+                            <div class="forgotLink">Forgot Password?</div>
+                            <div class="description">
+                                <p id="date"></p>
+                            </div>
+                        </form></div>
+                </div>
+            </div>
+            <div class="footer-container">
+                <div class="container">
+                    <div class="right-section">
+                        <div class="first-row" />
+                        <div class="second-row" />
+                        <div class="third-row" />
+                    </div>
+                    <div class="left-section">
+                        <span>©2018 Spookyburger Ltd.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

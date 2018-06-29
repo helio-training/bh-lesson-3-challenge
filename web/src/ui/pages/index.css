@@ -12,7 +12,6 @@
 .content-container {
   flex: 1 1 auto;
   display: flex;
-  flex-direction: column;
   align-items: stretch;
   justify-content: center;
   background-color: rgb(233, 232, 232);
