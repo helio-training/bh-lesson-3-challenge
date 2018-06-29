@@ -15,13 +15,13 @@ class Login extends Component {
     }
   }
 
-handleInputEmail = (event) => {
-  this.setState({ email: event.target.value })
-}
+  handleInputEmail = (event) => {
+    this.setState({ email: event.target.value })
+  }
 
-handleInputPassword = (event) => {
-  this.setState({ password: event.target.value })
-}
+  handleInputPassword = (event) => {
+    this.setState({ password: event.target.value })
+  }
 
   render() {
     // Create a PageTemplate element
@@ -43,28 +43,20 @@ handleInputPassword = (event) => {
     //    //Create a react button:
     //      //that handles a click calling this.handleClick
     //      //make sure to set its type to a button
+
     return (
       <PageTemplate>
-        The Login Page
+        <div styleName="title">Welcome to Percv</div>
+        <div styleName="description">Sign in with your information below</div>
+        <form id="around-form">
+          <input placeholder="Your Email" type="email" value={this.state.email} onChange={this.handleInputEmail} />
+          <input placeholder="Enter Password" type="password" value={this.state.password} onChange={this.handleInputPassword} />
+          <button type="button" value={this.state.handleClick} onClick={this.handleClick}>Login</button>
+          <button id="Forgot Password?" value={this.state.handleClick} onClick={this.handleClick}>Forgot Password?</button>
+        </form>
       </PageTemplate>
     )
   }
-}
-
-render() {
-  return (
-    <PageTemplate>
-      <div styleName="title">Welcome to Percv</div>
-      <div styleName="description">Sign in with your information below</div>
-      <form id="around-form">
-        <input placeholder="Your Email" type="email" value={this.state.email} onChange={this.handleInputEmail} />
-        <input placeholder="Enter Password" type="password" value={this.state.password} onChange={this.handleInputPassword} />
-        <button type="button" value={this.state.handleClick} onClick={this.handleClick}>Login</button>
-        <button id="Forgot Password?" value={this.state.handleClick} onClick={this.handleClick}>Forgot Password?</button>
-      </form>
-    </PageTemplate>
-  )
-}
 }
 export default loginProcess(CSSModules(Login, css))
 

@@ -1,25 +1,23 @@
 import React, { Component } from 'react'
-import { Link, withRouter } from 'react-router-dom'
+import { withRouter, Link } from 'react-router-dom'
 import CSSModules from 'react-css-modules'
 
-import Mood from './mood'
-import MoodFilter from './mood-filter'
 import css from './index.css'
 import connected from 'State/connect'
 import Mood from './mood'
-import Moodfilter from './mood-filter'
+import MoodFilter from './mood-filter'
 
 class LandingPage extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      parentValue: ''
+      parentValue: '84112'
     }
   }
 
   handleZipChange = (event) => {
     event.preventDefault()
-    this.setState({ parentValue: event.target.value })
+    this.setState
   }
   render() {
     // Create a div with a class of container
@@ -30,26 +28,16 @@ class LandingPage extends Component {
 
     return (
       <div styleName="container">
-<<<<<<< HEAD
         <hi>Challenges</hi>
         <ol>
           <li>
             <Link to="/.challenges/pyramid" > pyramid challenges </Link>
           </li>
         </ol>
-        <Mood />
-        <Moodfilter />
-=======
-        <h1>Challenges</h1>
-        <ol>
-          <li>
-            <Link to="/challenges/pyramid">Pyramid Challenge</Link>
-          </li>
-        </ol>
-        <Mood zipCode={this.state.parentValue} zipChange={this.handleZipChange} />
-        <MoodFilter zipCode={this.state.parentValue} zipChange2={this.handleZipChange} />
->>>>>>> 9a811d7cac4be0a17311cabac22f2f061bd669da
+        <Mood placeholder="zip" zipCode={this.state.parentValue} />
+        <MoodFilter placeholder="zip" zipCode={this.state.parentValue} />
       </div>
+
     )
   }
 }

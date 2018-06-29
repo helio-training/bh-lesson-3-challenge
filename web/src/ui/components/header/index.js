@@ -22,6 +22,10 @@ class Header extends Component {
           temp-text
         </div>
 
+        <div className="title">Percv</div>
+        <div className="account">Need an account?</div>
+        <div className="signUp">Sign Up</div>
+
       </div>
 
     )
